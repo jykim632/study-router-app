@@ -1,6 +1,3 @@
-export function cn(...inputs: (string | undefined | null)[]) {
-  return inputs.filter(Boolean).join(" ");
-}
 export function isValidDate(date: Date) {
   return date instanceof Date && !isNaN(date.getTime());
 }

@@ -7,12 +7,13 @@ import {
 } from "@react-router/dev/routes";
 
 export default [
-  index("routes/home.tsx"),
+  index("routes/welcome.tsx"),
   route("about", "./routes/about.tsx"),
+  route("home", "./routes/home.tsx"),
   ...prefix("design", [
     layout("layouts/layout.tsx", [
-      route("list", "./routes/design/list.tsx"),
       route("dashboard", "./routes/dashboard.tsx"),
+      route("manage", "./routes/manage.tsx"),
     ]),
   ]),
   // ...prefix("dashboard", [

@@ -1,4 +1,5 @@
-import type { Route } from "./+types/list";
+import { Welcome } from "~/welcome/welcome";
+import type { Route } from "./+types/welcome";
 
 export function meta({}: Route.MetaArgs) {
   return [
@@ -7,6 +8,6 @@ export function meta({}: Route.MetaArgs) {
   ];
 }
 
-export default function DesignList() {
-  return <div>list</div>;
+export default function WelcomePage() {
+  return <Welcome />;
 }

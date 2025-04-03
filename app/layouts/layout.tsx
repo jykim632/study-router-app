@@ -1,7 +1,6 @@
 import { Outlet } from "react-router";
 import { SidebarProvider, SidebarTrigger } from "~/components/ui/sidebar";
 import AppSidebar from "./appSidebar";
-import { cn } from "utils/ui_utils";
 import {
   Breadcrumb,
   BreadcrumbItem,
@@ -10,6 +9,7 @@ import {
   BreadcrumbSeparator,
 } from "~/components/ui/breadcrumb";
 import { Slash } from "lucide-react";
+import { cn } from "~/lib/utils";
 
 export default function Layout() {
   return (

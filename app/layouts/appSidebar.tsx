@@ -1,6 +1,6 @@
 "use client";
 
-import { Calendar1, Home, LayoutDashboard } from "lucide-react";
+import { Calendar1, Home, LayoutDashboard, PersonStanding } from "lucide-react";
 import {
   Sidebar,
   SidebarContent,
@@ -20,9 +20,11 @@ type SidebarMenuItem = {
 };
 
 const menus: SidebarMenuItem[] = [
-  { url: "google.com", title: "Home", icon: Home },
-  { url: "google.com", title: "Dashboard", icon: LayoutDashboard },
-  { url: "google.com", title: "Reservation", icon: Calendar1 },
+  // { url: "/welcome", title: "Welcome", icon: Home },
+  // { url: "/about", title: "About", icon: PersonStanding },
+  // { url: "/home", title: "Home", icon: Home },
+  { url: "/design/dashboard", title: "Dashboard", icon: LayoutDashboard },
+  { url: "/design/manage", title: "예약 관리", icon: Calendar1 },
 ];
 
 export default function AppSidebar() {
