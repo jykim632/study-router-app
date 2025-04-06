@@ -6,19 +6,6 @@ import CountContent from "./countContent";
 export default function DashboardPage() {
   return (
     <div>
-      <h1 className="text-3xl font-bold underline">Hello world!</h1>
-      <p>Welcome to the dashboard.</p>
-      <p>Here you can manage your settings and preferences.</p>
-      <br />
-      <section>
-        <h2>i will make this contents</h2>
-        <ul>
-          <li>Today Reservation Count - Card</li>
-          <li>Waiting Reservation Customer Count - Card</li>
-          <li>This Month Reservation Count - Card</li>
-          <li>This week reservation Count - Card</li>
-        </ul>
-      </section>
       <section className={cn("grid", "grid-cols-4", "gap-4")}>
         <DashboardCard
           title="오늘 예약 수"
